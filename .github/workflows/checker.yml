@@ -18,4 +18,4 @@ jobs:
             echo "CI/CD is working."
             echo "Second command"
             ls ${{github.workspace}}
-            pwd
+            ls ../
