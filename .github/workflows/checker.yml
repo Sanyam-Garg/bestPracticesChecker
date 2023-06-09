@@ -14,9 +14,11 @@ jobs:
 
     steps:
       - name: CI/CD Check
+        with:
+          context: ./
         run: |
             echo "CI/CD is working."
             pwd
-            cat deployment.yml
+            ls
             
             
