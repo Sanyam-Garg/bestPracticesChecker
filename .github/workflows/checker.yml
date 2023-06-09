@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
       - name: CI/CD Check
-        with:
-          context: ./
         run: |
-            echo "CI/CD is working."
-            pwd
-            ls
+            cat deployment.yml
+            cat .github/workflows/checker.yml
             
             
