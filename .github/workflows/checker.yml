@@ -1,0 +1,18 @@
+name: Best Practices Checker
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  ci_cd_check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: CI/CD Check
+        run: |
+              echo "CI/CD is working."
