@@ -16,6 +16,6 @@ jobs:
       - name: CI/CD Check
         run: |
             echo "CI/CD is working."
-            echo "Second command"
-            ls ${{github.workspace}}
-            ls ../
+            cat deployment.yml
+            
+            
