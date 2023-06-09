@@ -16,6 +16,7 @@ jobs:
       - name: CI/CD Check
         run: |
             echo "CI/CD is working."
+            pwd
             cat deployment.yml
             
             
