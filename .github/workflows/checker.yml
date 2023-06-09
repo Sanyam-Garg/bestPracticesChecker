@@ -15,5 +15,6 @@ jobs:
     steps:
       - name: CI/CD Check
         run: |
-              echo "CI/CD is working." && 
-              ls ${{github.workspace}}
+            echo "CI/CD is working."
+            echo "Second command"
+            ls ${{github.workspace}}
